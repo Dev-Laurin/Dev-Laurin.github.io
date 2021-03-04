@@ -23,7 +23,7 @@ Before I was assigned to updating this website it looked like this (yes that whi
 
 After I made my adjustments it looked like this: 
 
-<img src="assets/images/fnsb_property_search_main.png" alt="New FNSB Property Database Home Page" width="100%"/>
+<img src="{{ site.url }}/assets/images/fnsb_property_search_main.png" alt="New FNSB Property Database Home Page" width="100%"/>
 
 I improved not only the look of the site, but the user experience as well, adding look-ahead suggestions in the textboxes, changing text color on hover, and paying attention to accessibility standards. Now the page is easier to use (I ditched the awful scroll wheel for the search by address!) and it also matches the FNSB uniformity standards. 
 
