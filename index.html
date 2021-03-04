@@ -1,11 +1,35 @@
-﻿<!DOCTYPE html>
+---
+layout: default
+title: Portfolio
+cardsPerRow: 3
+---
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
-    <h1>Hello world</h1> 
-</body>
-</html>
+<h1>Latest Posts</h1>
+{% assign numPosts = site.posts.size %}
+{% assign numRows = numPosts | divided_by: 3.0 | ceil %}
+{% assign index = 0 %}
+{% for row in (0..numRows) %}
+  <div class="row">
+    {% assign numCol = numPosts | minus: index %}
+    {% if numCol > page.cardsPerRow %}
+      {% assign numCol = page.cardsPerRow %}
+    {% elsif numCol <= 0 %}
+      {% assign numCol = -1 %}
+    {% endif %}
+
+    {% for i in (1..numCol) %}
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="{{ site.posts[index].img }}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{ site.posts[index].title }}</h5>
+            <p class="card-text">{{ site.posts[index].description }}</p>
+            <a href="{{ site.posts[index].url }}" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      {% assign index = index | plus: 1 %}
+    {% endfor %}
+  </div>
+  <br>
+{% endfor %}
