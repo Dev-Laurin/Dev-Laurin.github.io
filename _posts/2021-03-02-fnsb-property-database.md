@@ -1,6 +1,7 @@
 ---
 layout: post
 author: Laurin
+title: FNSB Property Search
 img: assets/images/fnsb_property_search_main.PNG
 description: Improving the Property Search website with Bootstrap. 
 tags: VB.NET Bootstrap Website
