@@ -20,7 +20,7 @@ cardsPerRow: 3
     {% for i in (1..numCol) %}
       <div class="col">
         <div class="card" style="width: 18rem;">
-          <img src="{{ site.posts[index].img }}" class="card-img-top" alt="...">
+          <img src="{{site.url}}/{{ site.posts[index].img }}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">{{ site.posts[index].title }}</h5>
             <p class="card-text">{{ site.posts[index].description }}</p>
