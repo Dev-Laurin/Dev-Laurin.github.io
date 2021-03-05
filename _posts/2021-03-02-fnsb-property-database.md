@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Laurin
-img: assets/images/fnsb_property_search_main.png
+img: assets/images/fnsb_property_search_main.PNG
 description: Improving the Property Search website with Bootstrap. 
 tags: VB.NET Bootstrap Website
 category: work
@@ -19,11 +19,11 @@ I focused on 5 aspects:
 
 Before I was assigned to updating this website it looked like this (yes that whitespace was there): 
 
-<img src="{{site.url}}/assets/images/fnsb_property_search_old.png" alt="Old FNSB Property Database Home Page" width="100%"/>
+<img src="/assets/images/fnsb_property_search_old.PNG" alt="Old FNSB Property Database Home Page" width="100%"/>
 
 After I made my adjustments it looked like this: 
 
-<img src="{{site.url}}/assets/images/fnsb_property_search_main.png" alt="New FNSB Property Database Home Page" width="100%"/>
+<img src="/assets/images/fnsb_property_search_main.PNG" alt="New FNSB Property Database Home Page" width="100%"/>
 
 I improved not only the look of the site, but the user experience as well, adding look-ahead suggestions in the textboxes, changing text color on hover, and paying attention to accessibility standards. Now the page is easier to use (I ditched the awful scroll wheel for the search by address!) and it also matches the FNSB uniformity standards. 
 
