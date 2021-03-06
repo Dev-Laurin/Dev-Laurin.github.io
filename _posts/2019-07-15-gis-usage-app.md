@@ -2,7 +2,7 @@
 layout: post
 author: Laurin
 title: GIS Item Usage Web App
-img: assets/images/gis_webapp.PNG
+img: assets/images/gis_webapp_graph.PNG
 description: Webapp with interactable graphs to report item usage
 tags: Python Web GIS Javascript Esri Flask
 category: work
