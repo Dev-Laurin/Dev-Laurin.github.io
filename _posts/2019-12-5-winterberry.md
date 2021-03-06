@@ -2,7 +2,7 @@
 layout: post
 author: Laurin
 title: Winterberry Google Web App
-img: assets/images/Screenshot_2021-03-05 Winterberry.PNG
+img: assets/images/Screenshot_2021-03-05 Winterberry.png
 description: Creating Google Web App for citizen science
 tags: Google Web Javascript HTML CSS GoogleMaps Science
 category: work
@@ -15,9 +15,9 @@ I ended up creating a Google Web App, since it was free, and embedded the webfor
 
 Then I created a nice Map with graphs to show the data given by each site. 
 
-<img src="/assets/images/Screenshot_2021-03-05 Winterberry - View the Data.PNG" alt="Winterberry Citizen Science Site View the Data Map" width="100%"/>
+<img src="/assets/images/Screenshot_2021-03-05 Winterberry - View the Data.png" alt="Winterberry Citizen Science Site View the Data Map" width="100%"/>
 
-<img src="/assets/images/Screenshot_2021-03-05 Winterberry - View the Data(1).PNG" alt="Winterberry Citizen Science Site View the Data graphs with slider" width="100%"/>
+<img src="/assets/images/Screenshot_2021-03-05 Winterberry - View the Data(1).png" alt="Winterberry Citizen Science Site View the Data graphs with slider" width="100%"/>
 
 By using the sliders to change the date range, the graphs update to show each category the current chosen plant has for its berries. For example: Sept 3 2019 - Plant Name: Planty - 3 berries were rotten. This was half of the pie because there were only 6 berries to begin with. 
 

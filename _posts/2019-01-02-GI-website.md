@@ -2,7 +2,7 @@
 layout: post
 author: Laurin
 title: Geophysical Institute Website
-img: assets/images/GI.PNG
+img: assets/images/GI.png
 description: Collaborating on new GI Website
 tags: Drupal Web PHP Python
 category: work
@@ -15,11 +15,11 @@ Our goal was to create a site that didn't get out of date (no contact info, etc 
 
 Particularly, I was apart of small seemingly random aspects of the site. For Example, I worked on the Magnetometer page, finding a critical bug and working with a co-worker to get it fixed. I also worked on the People tab, the filtering, layout, photo uniformity, etc. I worked on the Events, Students, and About tabs as well. 
 
-<img src="/assets/images/Screenshot_2021-03-05 Magnetometer Geophysical Institute.PNG" alt="Magnetometer GI webpage" width="100%"/>
+<img src="/assets/images/Screenshot_2021-03-05 Magnetometer Geophysical Institute.png" alt="Magnetometer GI webpage" width="100%"/>
 
 The biggest scripting data transfer I accomplished though was the Alaska Science Forum. There were hundreds of articles to be transferred and using Python (Beautiful Soup) I scripted it's transfer to the new site. 
 
-<img src="/assets/images/GI_ASF.PNG" alt="Alaska Science Forum articles on main GI page" width="100%"/>
+<img src="/assets/images/GI_ASF.png" alt="Alaska Science Forum articles on main GI page" width="100%"/>
 
 Drupal, a CMS, made the website work fairly easy. Sometimes it was a pain trying to get libraries to cooperate or to find the right ones (maintained, secure), but the interface for setting up the site was often code-less (I did use some CSS every now and then though. And I made a PHP module for the magnetometer). 
 
