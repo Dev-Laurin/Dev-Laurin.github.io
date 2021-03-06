@@ -25,6 +25,7 @@ cardsPerRow: 3
             <h5 class="card-title">{{ site.posts[index].title }}</h5>
             <p class="card-text">{{ site.posts[index].description }}</p>
             <a href="{{ site.posts[index].url }}" class="btn btn-primary">Read More</a>
+            <a href="{{ site.posts[index].url }}" class="btn btn-light float-right">{{ site.posts[index].date | date: "%b %d, %Y" }}</a>
           </div>
         </div>
       </div>
