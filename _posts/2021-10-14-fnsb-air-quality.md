@@ -3,7 +3,7 @@ layout: post
 author: Laurin
 title: FNSB Air Quality
 img: assets/images/fnsb_air_quality_main.PNG
-description: Scripting data from APIs. 
+description: Web & Mobile App displaying air quality sensor data. 
 tags: script python api air_quality webapp mobile arcgis esri
 category: work
 ---
@@ -16,6 +16,6 @@ My role? Responsible for the data extraction and formatting, I scripted the proc
 
 The stars represent borough-owned devices and the squares are devices owned by citizens. 
 
-<img src="/assets/images/fnsb_air_quality_popup.PNG" alt="Web map popup showing AQI value." width="100%"/>
+<img src="/assets/images/fnsb_air_quality_popup.PNG" alt="Web map popup showing AQI value." width="50%" class="center"/>
 
 Inserting interactable graphs, the ability to download data directly, and more detailed information on fnsb owned sensors remain future enhancements. 
