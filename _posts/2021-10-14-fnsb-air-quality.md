@@ -16,6 +16,6 @@ My role? Responsible for the data extraction and formatting, I scripted the proc
 
 The stars represent borough-owned devices and the squares are devices owned by citizens. 
 
-<img src="/assets/images/fnsb_air_quality_popup.PNG" alt="Web map popup showing AQI value." width="50%" class="center"/>
+<img src="/assets/images/fnsb_air_quality_popup.PNG" alt="Web map popup showing AQI value." style="display: block; margin-left: auto; margin-right: auto; width: 50%;"/>
 
 Inserting interactable graphs, the ability to download data directly, and more detailed information on fnsb owned sensors remain future enhancements. 
