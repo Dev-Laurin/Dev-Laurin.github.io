@@ -4,7 +4,7 @@ author: Laurin
 title: FNSB Property Search
 img: assets/images/fnsb_property_search_main.PNG
 description: Improving the Property Search website with Bootstrap. 
-tags: VB.NET Bootstrap Website
+tags: VB.NET Bootstrap Website C# Javascript HTML CSS
 category: work
 ---
 If you've ever bought a house you would know how important research on a house is. In the Fairbanks North Star Borough there is a Property Database open to the public where you can see the assessment value of the house and therefore its annual property tax, as well as other important information. 
