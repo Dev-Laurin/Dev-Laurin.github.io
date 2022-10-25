@@ -16,6 +16,13 @@ category: work
 ---
 ```
 3. Place your main image for the post in assets/images. 
+## Run locally
+### Setup - Install dependencies
+`bundle install` 
+### Start Server
+`bundle exec jekyll serve` 
+### Preview
+`http://localhost:4000`
 
 ## Future Work
 1. Create a search / filter at the top, including to organize by date ranges, categories, tags, languages. 
