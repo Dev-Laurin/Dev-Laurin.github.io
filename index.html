@@ -3,18 +3,28 @@ layout: default
 title: Portfolio
 ---
 
-<h1>Projects</h1>
-<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-  {% assign categories = site.categories | sort %}
-  {% for category in categories %}
-    {% assign cat = category | first %}
-    <input type="radio" class="btn-check" name="btnradio" id="{{ cat }}" autocomplete="off" onclick="filterByCategory(this.id)">
-    <label class="btn btn-outline-primary" for="{{ cat }}">{{ cat }}</label>
-  {% endfor %}
+<h1>Posts</h1>
+<div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+    {% assign categories = site.categories | sort %}
+    {% for category in categories %}
+      {% assign cat = category | first %}
+      <input type="radio" class="btn-check" name="btnradio" id="{{ cat }}" autocomplete="off" onclick="filterByCategory(this.id)">
+      <label class="btn btn-outline-primary" for="{{ cat }}">{{ cat }}</label>
+    {% endfor %}
 
-  <input type="radio" class="btn-check" name="btnradio" id="All" autocomplete="off" checked onclick="filterByCategory(this.id)">
-  <label class="btn btn-outline-primary" for="All">All</label>
+    <input type="radio" class="btn-check" name="btnradio" id="All" autocomplete="off" checked onclick="filterByCategory(this.id)">
+    <label class="btn btn-outline-primary" for="All">All</label>
+  </div>
+
+  <form action="{{ site.baseurl }}/search.html" method="get">
+    <div class="input-group mb-3">
+        <input type="text" id="search-box" name="query" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="searchButton">
+        <button class="btn btn-outline-secondary" value="search" type="submit" id="searchButton">Go</button>
+      </div>      
+  </form>
 </div>
+
 <hr/> 
 
 <script>
@@ -29,6 +39,10 @@ title: Portfolio
         ? 'unset'
         : 'none'; 
     {% endfor %}
+  }
+
+  function search(text){
+
   }
 
 </script>
