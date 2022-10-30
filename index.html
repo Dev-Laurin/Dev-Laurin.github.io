@@ -1,24 +1,48 @@
 ---
 layout: default
-title: Portfolio
-cardsPerRow: 3
+title: Posts
 ---
 
-<h1>Latest Posts</h1>
-{% assign numPosts = site.posts.size %}
-{% assign numRows = numPosts | divided_by: 3.0 | ceil %}
-{% assign index = 0 %}
-{% for row in (0..numRows) %}
-  <div class="row">
-    {% assign numCol = numPosts | minus: index %}
-    {% if numCol > page.cardsPerRow %}
-      {% assign numCol = page.cardsPerRow %}
-    {% elsif numCol <= 0 %}
-      {% assign numCol = -1 %}
-    {% endif %}
+<h1>Posts</h1>
+<div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+    {% assign categories = site.categories | sort %}
+    {% for category in categories %}
+      {% assign cat = category | first %}
+      <input type="radio" class="btn-check" name="btnradio" id="{{ cat }}" autocomplete="off" onclick="filterByCategory(this.id)">
+      <label class="btn btn-outline-primary" for="{{ cat }}">{{ cat }}</label>
+    {% endfor %}
 
-    {% for i in (1..numCol) %}
-      <div class="col">
+    <input type="radio" class="btn-check" name="btnradio" id="All" autocomplete="off" checked onclick="filterByCategory(this.id)">
+    <label class="btn btn-outline-primary" for="All">All</label>
+  </div>
+
+</div>
+
+<hr/> 
+
+<script>
+  //https://www.langrsoft.com/2020/03/26/filtering-blog-posts-by-category-with-jekyll/
+  function filterByCategory(category){
+    var id = 0; 
+    //find all site posts with this category
+    {% for post in site.posts %}
+      var categories = {{ post.categories | jsonify }} 
+      var postDiv = document.getElementById(++id);  
+      postDiv.style.display = (category == "All" || categories.includes(category)) 
+        ? 'unset'
+        : 'none'; 
+    {% endfor %}
+  }
+
+</script>
+
+{% assign index = 0 %}
+{% assign id = 0 %}
+<div class="row">
+    {% for post in site.posts %}
+      {% assign id = id | plus: 1 %}
+      <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6" id="{{id}}" style="padding-top: 5px; padding-bottom: 5px;">
         <div class="card" style="width: 18rem;">
           <img src="{{site.url}}/{{ site.posts[index].img }}" class="card-img-top" alt="...">
           <div class="card-body">
@@ -31,6 +55,4 @@ cardsPerRow: 3
       </div>
       {% assign index = index | plus: 1 %}
     {% endfor %}
-  </div>
-  <br>
-{% endfor %}
+</div>
