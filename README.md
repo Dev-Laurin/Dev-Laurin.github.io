@@ -1,6 +1,8 @@
 # Dev-Laurin.github.io
 A github pages website to showcase my prior work. A portfolio/blog. 
 
+[View Live](https://dev-laurin.github.io/)
+
 ## Add an article
 1. Create a new markdown file in _posts with the posting/creation date in the name: 2021-10-14-example-article.md
 2. Add the following section at the top. Choose either work or personal for the project category. 
