@@ -25,19 +25,22 @@ if (searchTerm) {
     this.field('author');
     this.field('category');
     this.field('content');
+    this.field('date');
+    this.field('tags'); 
     for (var key in window.store) { // Add the data to lunr
       this.add({
         'id': key,
         'title': window.store[key].title,
         'author': window.store[key].author,
         'category': window.store[key].category,
-        'content': window.store[key].content
+        'content': window.store[key].content, 
+        'date': window.store[key].date, 
+        'tags': window.store[key].tags
       });
     }
   });
 
     var results = idx.search(searchTerm); // Get lunr to perform a search
-    console.log(results)
     displaySearchResults(results, window.store); // We'll write this in the next section
 }
 
@@ -49,8 +52,14 @@ function displaySearchResults(results, store) {
 
     for (var i = 0; i < results.length; i++) {  // Iterate over the results
       var item = store[results[i].ref];
-      appendString += '<li><a href="' + item.url + '"><h3>' + item.title + '</h3></a>';
-      appendString += '<p>' + item.content.substring(0, 150) + '...</p></li>';
+      appendString += '<a href="' + item.url + '" class="list-group-item list-group-item-action"><div class="d-flex w-100 justify-content-between"><h5 class="mb-1">' + item.title + '</h5><small>' + item.date + '</small></div>';
+      appendString += '<p class="mb-1">' + item.content.substring(0, 150) + '...</p>';
+      appendString += '<small>'; 
+      let tags = item.tags.split(" "); 
+      for (var j = 0; j < tags.length; j++){
+        appendString += '<span class="badge rounded-pill bg-light text-dark">' + tags[j] + '</span>'; 
+      }
+      appendString += '</small></a>'; 
     }
 
     searchResults.innerHTML = appendString;

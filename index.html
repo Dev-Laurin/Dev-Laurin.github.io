@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Portfolio
+title: Posts
 ---
 
 <h1>Posts</h1>
@@ -17,12 +17,6 @@ title: Portfolio
     <label class="btn btn-outline-primary" for="All">All</label>
   </div>
 
-  <form action="{{ site.baseurl }}/search.html" method="get">
-    <div class="input-group mb-3">
-        <input type="text" id="search-box" name="query" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="searchButton">
-        <button class="btn btn-outline-secondary" value="search" type="submit" id="searchButton">Go</button>
-      </div>      
-  </form>
 </div>
 
 <hr/> 
@@ -39,10 +33,6 @@ title: Portfolio
         ? 'unset'
         : 'none'; 
     {% endfor %}
-  }
-
-  function search(text){
-
   }
 
 </script>
