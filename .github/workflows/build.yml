@@ -15,3 +15,9 @@ jobs:
           node-version: 16
           cache: 'npm'
       - run: npm ci 
+      - name: Deploy build to main 
+        run: |
+          git config --global user.name 'Dev-Laurin'
+          git config --global user.email 'Dev-Laurin@users.noreply.github.com'
+          git commit -m "Building Node Modules"
+          git push 
