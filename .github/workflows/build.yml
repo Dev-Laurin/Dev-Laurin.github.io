@@ -19,6 +19,7 @@ jobs:
         run: |
           git config --global user.name 'Dev-Laurin'
           git config --global user.email 'Dev-Laurin@users.noreply.github.com'
+          git add -A
           git commit -m "Building Node Modules"
           git merge -s ours gh-pages
           git push 
