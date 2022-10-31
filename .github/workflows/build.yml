@@ -25,6 +25,7 @@ jobs:
           git push 
       - name: Deploy github pages
         run: |
+          git checkout main
           git checkout gh-pages
           git merge main 
           git commit -m "Deploy build to prod"
