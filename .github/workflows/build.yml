@@ -20,4 +20,11 @@ jobs:
           git config --global user.name 'Dev-Laurin'
           git config --global user.email 'Dev-Laurin@users.noreply.github.com'
           git commit -m "Building Node Modules"
+          git merge -s ours gh-pages
+          git push 
+      - name: Deploy github pages
+        run: |
+          git checkout gh-pages
+          git merge main 
+          git commit -m "Deploy build to prod"
           git push 
