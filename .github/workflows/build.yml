@@ -1,4 +1,4 @@
-name: Build and deploy Jekyll site to GitHub Pages
+name: Build Jekyll site
 
 on:
   push:
@@ -15,4 +15,3 @@ jobs:
           node-version: 16
           cache: 'npm'
       - run: npm ci 
-      - run: npm test
