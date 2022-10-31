@@ -27,9 +27,4 @@ category: work
 `http://localhost:4000`
 
 ## Future Work
-1. Create a search / filter at the top, including to organize by date ranges, categories, tags, languages. 
-2. Make the About Me more interesting?
-3. Create snap-to navigation for the article on the right so users can go to specific sections if the article/post is long. 
-4. Create project timelines and post-reflections? (pre conditions / initial design, issues, re-writes, initial timeline vs real timeline, post-reflection)
-5. Project use / outcomes: Users/day, Users/month?
-6. Prettier / more professional
+See [GitHub Issues](https://github.com/Dev-Laurin/Dev-Laurin.github.io/issues) and search by 'enhancement' tag for features. 
