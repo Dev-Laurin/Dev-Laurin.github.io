@@ -1,5 +1,5 @@
 # Dev-Laurin.github.io
-A github pages website to showcase my prior work. A [portfolio/blog](https://dev-laurin.github.io/). 
+A [github pages website](https://dev-laurin.github.io/) to showcase my prior work.
 
 ## Add an article
 1. Create a new markdown file in _posts with the posting/creation date in the name: 2021-10-14-example-article.md
