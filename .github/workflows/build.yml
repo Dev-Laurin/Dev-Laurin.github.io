@@ -1,4 +1,4 @@
-name: Build Jekyll site
+name: Build & Push
 
 on:
   push:
@@ -21,11 +21,13 @@ jobs:
           git config --global user.email 'Dev-Laurin@users.noreply.github.com'
           git add -A
           git commit -m "Building Node Modules"
-          git merge -s ours gh-pages
           git push 
+          git checkout gh-pages
+          git merge -s ours gh-pages
+          git commit -m "Merge gh-pages"
+          git push
       - name: Deploy github pages
         run: |
-          git checkout main
           git checkout gh-pages
           git merge main 
           git commit -m "Deploy build to prod"
