@@ -22,11 +22,6 @@ jobs:
           git add -A
           git commit -m "Building Node Modules"
           git push 
-          git checkout gh-pages
-          git checkout main
-          git merge -s ours gh-pages
-          git commit -m "Merge gh-pages"
-          git push
       - name: Deploy github pages
         run: |
           git checkout gh-pages
