@@ -1,16 +1,18 @@
 ---
-layout: page
+layout: default
 title: About Me
 permalink: /about/
 ---
-<div class="row">
-    <div class="col-md-8">
-        <p>&emsp;Working remote in the great state of Alaska, I'm a full stack software engineer with 6+ years of experience creating and maintaining web applications. From having acted as Sales, Product, Support, Developer, and Project Manager when operating my own software-consulting business to operating as an employee where I owned a small part of the codebase, I have a breadth of knowledge of the software industry. I have programmed software for self-hosted and cloud environments, using AWS, DigitalOcean, and Azure as providers. I've programmed with C#, .NET, VBA, Python, Ruby on Rails, React, NodeJS, Javascript, and <a href="https://techrez.io/resume/l-m">more</a>. </p>
-        <p>&emsp;I have integrated with external and internal APIs, maintained internal packages, and built customer-facing UIs. I have maintained services with both monolithic and microservice architectures. I have also used both SQL and nonSQL databases. </p>
-        <p>&emsp;On a daily basis I squash bugs, create features, write documentation, perform code reviews, and troubleshoot issues.</p>
-        <p>&emsp;When left to my own devices, I read and start new projects, ever trying to expand my knowledge. AI, robotics, blockchain, and game design are my favorite topics. You'll see some of my repos with these themes and I'll contribute more knowledge in my posts about them as I go.</p>
-        <p>When I'm not at my computer I'm enjoying the outdoors walking with my dog, biking, boating, kayaking, or kicking back in a hammock in the midnight sun.</p>
-    </div>
+# About Me 
+
+<h1> About Me </h1>
+    Working remote in the great state of Alaska, I'm a full stack software engineer with 6+ years of experience creating and maintaining web applications. From having acted as Sales, 
+    Product, Support, Developer, and Project Manager when operating my own software-consulting business to operating as an employee where I owned a small part of the codebase, I have a breadth of knowledge of the software industry. I have programmed software for self-hosted and cloud environments, using AWS, DigitalOcean, and Azure as providers. I've programmed with C#, .NET, VBA, Python, Ruby on Rails, React, NodeJS, Javascript, and <a href="https://techrez.io/resume/l-m">more</a>.
+        I have integrated with external and internal APIs, maintained internal packages, and built customer-facing UIs. I have maintained services with both monolithic and microservice architectures. I have also used both SQL and nonSQL databases. 
+        On a daily basis I squash bugs, create features, write documentation, perform code reviews, and troubleshoot issues.
+        When left to my own devices, I read and start new projects, ever trying to expand my knowledge. AI, robotics, blockchain, and game design are my favorite topics. You'll see some of my repos with these themes and I'll contribute more knowledge in my posts about them as I go.
+        When I'm not at my computer I'm enjoying the outdoors walking with my dog, biking, boating, kayaking, or kicking back in a hammock in the midnight sun.
+
     <div class="col float-right-md">
          <figure>
                 <img src="/assets/images/alaska-gfb4b82344_640.jpg" alt="Beautiful Alaskan Glacier" width="400px"/>

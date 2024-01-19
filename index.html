@@ -39,20 +39,21 @@ title: Posts
 
 {% assign index = 0 %}
 {% assign id = 0 %}
+{% for post in site.posts %}
 <div class="row">
-    {% for post in site.posts %}
-      {% assign id = id | plus: 1 %}
-      <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6" id="{{id}}" style="padding-top: 5px; padding-bottom: 5px;">
-        <div class="card" style="width: 18rem;">
+      <div class="col-sm-12" id="{{id}}" style="padding-top: 5px; padding-bottom: 5px;">
+        <div class="card" style="width: 100%">
+          <div class="card-header">
+            <div class="custom-card-title">{{ site.posts[index].title }}</div>
+          </div>
           <img src="{{site.url}}/{{ site.posts[index].img }}" class="card-img-top" alt="">
           <div class="card-body">
-            <h5 class="card-title">{{ site.posts[index].title }}</h5>
             <p class="card-text">{{ site.posts[index].description }}</p>
             <a href="{{ site.posts[index].url }}" class="btn btn-primary">Read More</a>
             <a href="{{ site.posts[index].url }}" class="btn btn-light float-right">{{ site.posts[index].date | date: "%b %d, %Y" }}</a>
           </div>
         </div>
       </div>
-      {% assign index = index | plus: 1 %}
-    {% endfor %}
 </div>
+{% assign index = index | plus: 1 %}
+    {% endfor %}
