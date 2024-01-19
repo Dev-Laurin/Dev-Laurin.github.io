@@ -1,0 +1,16 @@
+@import "{{ site.theme }}";
+
+/* Remove before slashes in header when title is in a bootstrap card */ 
+custom-card-title {
+    margin-top: 24px;
+    margin-bottom: 8px;
+    font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #474747;
+    text-indent: 3px;
+  }
+  
+custom-card-title::before {
+    content: ""; 
+}
