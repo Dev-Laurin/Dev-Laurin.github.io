@@ -6,6 +6,8 @@ img: assets/images/GI.png
 description: Collaborating on new GI Website
 tags: Drupal Web PHP Python
 category: work
+other_url: https://www.gi.alaska.edu/
+toc: false 
 ---
 For this project I was working for RCS - Research Computing Systems at the Geophysical Institute. They're a small team doing IT and Software support for the researchers. 
 

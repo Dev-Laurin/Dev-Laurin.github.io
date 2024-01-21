@@ -6,6 +6,8 @@ img: assets/images/fnsb_air_quality_main.PNG
 description: Web & Mobile App displaying air quality sensor data. 
 tags: script python api air_quality webapp mobile arcgis esri
 category: work
+other_url: https://experience.arcgis.com/experience/254e83d6286a4eafabffce9311801dbd/
+toc: false 
 ---
 
 Purple Air. Have you heard of it? No it's not the toxic gas from Mario, though the concept isn't far off. It's actually a company selling affordable air quality monitoring devices to consumers for citizen science. Our local government decided to purchase a few since it was  cheaper and more reliable than the alternative devices of the past. 

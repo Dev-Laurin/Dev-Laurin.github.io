@@ -6,6 +6,7 @@ img: assets/images/gis_webapp_graph.PNG
 description: Webapp with interactable graphs to report item usage
 tags: Python Web GIS Javascript Esri Flask
 category: work
+toc: false 
 ---
 Every year at the Fairbanks North Star Borough our GIS team has to report how their resources are being utilized, particularly by the public, since that's whom a local government is meant to serve. 
 

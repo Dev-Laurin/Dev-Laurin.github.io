@@ -6,6 +6,8 @@ img: assets/images/Screenshot_2021-03-05 Winterberry.png
 description: Creating Google Web App for citizen science
 tags: Google Web Javascript HTML CSS GoogleMaps Science
 category: work
+other_url: https://sites.google.com/alaska.edu/winterberry/
+toc: false 
 ---
 While working for RCS we had clients approach us about creating a low-no cost method to collect citizen science data through the web. They already had their Google site created and just need their forms converted to webforms and their data accessible from a spreadsheet. 
 
