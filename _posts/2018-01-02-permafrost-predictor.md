@@ -6,6 +6,8 @@ img: assets/images/permafrost_predictor_main.PNG
 description: Permafrost Prediction Calculator iOS App
 tags: iOS Swift Science
 category: work
+github_url: https://github.com/Dev-Laurin/PermafrostPredictor
+toc: false 
 ---
 It's funny how this project started out. First I applied for a job at the Geophysical and was denied. However they reached out to me for the opportunity to create this mobile app instead. 
 

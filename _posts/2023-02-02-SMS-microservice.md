@@ -6,6 +6,8 @@ img:
 description: Creating a SMS microservice for OneLogin
 tags: Javascript RabbitMQ NodeJS SMS
 category: work
+toc: false 
+end_date: 2023-07-16
 ---
 
 While working at OneLogin I was tasked with creating a way to send SMS otp codes through multiple SMS providers. The solution? Create a new microservice (or rather a worker) to handle SMS and pull the responsibility out of the monoliths. By decoupling functionality, we were building a microservice architecture that would be easier to maintain and allow efficient code-reuse.

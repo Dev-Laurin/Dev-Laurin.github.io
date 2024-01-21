@@ -24,7 +24,7 @@ if (searchTerm) {
     this.field('title', { boost: 10 });
     this.field('author');
     this.field('category');
-    this.field('content');
+    this.field('content'), { boost: 8 };
     this.field('date');
     this.field('tags'); 
     for (var key in window.store) { // Add the data to lunr
